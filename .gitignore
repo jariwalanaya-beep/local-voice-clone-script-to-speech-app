@@ -1,0 +1,37 @@
+# ---------------------------------------------------------------------------
+# Voice data. These identify a real person. Do not commit them.
+# ---------------------------------------------------------------------------
+data/
+refs/
+samples/
+webapp/outputs/
+# contains reference-clip transcripts of a real person's speech
+webapp/config.json
+*.wav
+*.mp3
+*.flac
+
+# ---------------------------------------------------------------------------
+# Trained model weights - a voice clone is biometric data. Keep it local.
+# ---------------------------------------------------------------------------
+*.pth
+*.ckpt
+*.bin
+*.safetensors
+
+# ---------------------------------------------------------------------------
+# Third-party trees, caches and build artefacts (~17 GB)
+# ---------------------------------------------------------------------------
+GPT-SoVITS/
+gptsovits/
+toolchain/
+hf_cache/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# ---------------------------------------------------------------------------
+# Run logs
+# ---------------------------------------------------------------------------
+*.log
